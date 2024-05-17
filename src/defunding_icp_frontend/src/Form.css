@@ -1,0 +1,36 @@
+.form-container {
+    width: 400px; /* Ancho del contenedor del formulario */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interior del contenedor */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .form-label {
+    display: block; /* Muestra las etiquetas como bloques */
+    margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
+  }
+  
+  .form-input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 15px; /* Espaciado inferior entre campos de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total */
+  }
+  
+  .form-button {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interior */
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .form-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+  }
+  

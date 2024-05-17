@@ -1,0 +1,28 @@
+.login-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Altura del 100% del viewport */
+  }
+
+.login-btn {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Elimina el borde */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block;
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen exterior */
+    transition-duration: 0.4s; /* Duración de la transición */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    border-radius: 12px; /* Radio de borde */
+  }
+  
+  .login-btn:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+    color: white; /* Cambia el color del texto al pasar el ratón */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* Agrega una sombra al pasar el ratón */
+  }
+  

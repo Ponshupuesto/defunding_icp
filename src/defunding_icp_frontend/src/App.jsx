@@ -1,29 +1,28 @@
+// App.js
+
 import { useState } from 'react';
-import { defunding_icp_backend } from 'declarations/defunding_icp_backend';
+import Login from './Login'; // Importa el componente de inicio de sesión
+import Greeting from './Greeting'; // Importa el componente de saludo
 
 function App() {
-  const [greeting, setGreeting] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [actor, setActor] = useState(null);
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    defunding_icp_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
+  const handleLoginSuccess = (actorInstance) => {
+    setActor(actorInstance);
+    setIsLoggedIn(true);
+  };
 
   return (
     <main>
       <img src="/logo2.svg" alt="DFINITY logo" />
       <br />
       <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
+      {isLoggedIn ? (
+        <Greeting actor={actor} />
+      ) : (
+        <Login onLoginSuccess={handleLoginSuccess} />
+      )}
     </main>
   );
 }
